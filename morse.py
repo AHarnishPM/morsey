@@ -10,8 +10,10 @@ def init():
         etom()
     elif direction == "2":
         mtoe()
+    elif direction == "q":
+        exit()
     else:
-        print "Type 1 or 2"
+        print "Type 1, 2, or q"
         init()
 
 
@@ -118,6 +120,36 @@ def mtoe():
             elif letter == "--..":
                  wrd += "z"
 
+            elif letter == ".----":
+                wrd += "1"
+
+            elif letter == "..---":
+                wrd += "2"
+
+            elif letter == "...--":
+                wrd += "3"
+
+            elif letter == "....-":
+                wrd += "4"
+
+            elif letter == ".....":
+                wrd += "5"
+
+            elif letter == "-....":
+                wrd += "6"
+
+            elif letter == "--...":
+                wrd += "7"
+
+            elif letter == "---..":
+                wrd += "8"
+
+            elif letter == "----.":
+                wrd += "9"
+
+            elif letter == "-----":
+                wrd += "0"
+
             else:
                 print "Error:Unknown value"
 
@@ -128,6 +160,8 @@ def mtoe():
 
     print wrd
 
+    time.sleep(2)
+    start()
 
 
 
@@ -142,110 +176,151 @@ def etom():
     for i in enletrs:
         if i == "a":
             binline += "102"
-            print i
+
 
         elif i == "b":
             binline += "2010101"
-            print i
+
 
         elif i == "c":
             binline += "2010201"
-            print i
+
 
         elif i == "d":
             binline += "20101"
-            print i
+
 
         elif i == "e":
             binline += "1"
-            print i
+
 
         elif i == "f":
             binline += "1010201"
-            print i
+
 
         elif i == "g":
             binline += "20201"
-            print i
+
 
         elif i == "h":
             binline += "1010101"
-            print i
+
 
         elif i == "i":
             binline += "101"
-            print i
+
 
         elif i == "j":
             binline += "1020202"
-            print i
+
 
         elif i == "k":
             binline += "20102"
-            print i
+
 
         elif i == "l":
             binline += "1020101"
-            print i
+
 
         elif i == "m":
             binline += "202"
-            print i
+
 
         elif i == "n":
             binline += "201"
-            print i
+
 
         elif i == "o":
             binline += "20202"
-            print i
+
 
         elif i == "p":
             binline += "1020201"
-            print i
+
 
         elif i == "q":
             binline += "2020102"
-            print i
+
 
         elif i == "r":
             binline += "10201"
-            print i
+
 
         elif i == "s":
             binline += "10101"
-            print i
+
 
         elif i == "t":
             binline += "2"
-            print i
+
 
         elif i == "u":
             binline += "10102"
-            print i
+
 
         elif i == "v":
             binline += "1010102"
-            print i
+
 
         elif i == "w":
             binline += "10202"
-            print i
+
 
         elif i == "x":
             binline += "2010102"
-            print i
+
 
         elif i == "y":
             binline += "2010202"
-            print i
+
 
         elif i == "z":
             binline += "2020101"
-            print i
+
 
         elif i == "_":
             binline += "0"
+
+
+        elif i == "1":
+            binline += "102020202"
+
+
+        elif i == "2":
+            binline += "101020202"
+
+
+        elif i == "3":
+            binline += "101010202"
+
+
+        elif i == "4":
+            binline += "101010102"
+
+
+        elif i == "5":
+            binline += "101010101"
+
+
+        elif i == "6":
+            binline += "201010101"
+
+
+        elif i == "7":
+            binline += "202010101"
+
+
+        elif i == "8":
+            binline += "202020101"
+
+
+        elif i == "9":
+            binline += "202020201"
+
+
+        elif i == "0":
+            binline += "202020202"
+
 
         else:
             print "error: unrecognized input"
@@ -264,12 +339,19 @@ def etom():
 
     print binline
 
+    time.sleep(2)
+    start()
 
 
-print "Morse Code Translator"
-print "coded by Aaron Harnish"
-print "----------------------"
-print "Type \'1\' for english to morse"
-print "Type \'2\' for morse to english"
 
-init()
+def start():
+    print "Morse Code Translator"
+    print "coded by Aaron Harnish"
+    print "----------------------"
+    print "Type \'1\' for english to morse"
+    print "Type \'2\' for morse to english"
+    print "Type \'q\' to exit program"
+
+    init()
+
+start()
