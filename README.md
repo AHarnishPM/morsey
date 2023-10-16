@@ -1,4 +1,4 @@
-# Morse-Code-Translator
+# morsey
 Contains methods to translate between morse code and english in both text and audio forms.
 
 This is my Morse code translator project. I'm mainly using it as a learning tool to get a better understanding of open-source code and proper Python coding practices.
