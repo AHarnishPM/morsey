@@ -1,5 +1,5 @@
 """
-Contains all morsey_old methods. Functionalities involve translating english and morse code in various mediums.
+Contains all morsey methods. Functionalities involve translating english and morse code in various mediums.
 """
 import wavio
 import numpy as np
