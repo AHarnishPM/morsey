@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "numpy", "wavio", "playsound"]
 build-backend = "hatchling.build"
 
 [project]
 name = "morsey"
-version = "0.0.2"
+version = "0.1.1"
 authors = [
   { name="Aaron Harnish", email="aaronjharnish@gmail.com" },
 ]
@@ -13,7 +13,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3.9",
-    "License :: OSI Approved :: GNU GPL",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
